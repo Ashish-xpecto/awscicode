@@ -12,8 +12,5 @@ app.use(express.static('test'));
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('index.html'));
 });
- 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://www.nodjsapptest.work4clients.in:${PORT}`);
-});
+
  
