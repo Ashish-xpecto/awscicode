@@ -1,16 +1,13 @@
-
 const express = require("express");
- 
-const app = express();
 
+const app = express();
 
 // Serve the HTML file
 app.get('/', (req, res) => {
-  res.status(200).send(hello world);
+  res.status(200).send("hello world");
 });
 
-app.listner(8080, () => {
- console.log("server is running on port 3000");
+// Start the server
+app.listen(8080, () => {
+  console.log("Server is running on port 8080");
 });
-
- 
