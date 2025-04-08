@@ -1,16 +1,16 @@
-src/app.js:
-import express from 'express';
-import path from 'path';
+
+const express = require("express");
  
 const app = express();
-const PORT = process.env.PORT || 3000;
- 
-// Serve static files from the public directory
-app.use(express.static('test'));
- 
+
+
 // Serve the HTML file
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve('index.html'));
+  res.status(200).send(hello world);
+});
+
+app.listner(8080, () => {
+ console.log("server is running on port 3000");
 });
 
  
