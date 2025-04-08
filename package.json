@@ -2,13 +2,11 @@
   "name": "awscicode",
   "version": "1.0.0",
   "description": "this is for elastic beanstalk deployment",
-  "main": "app.js",
-  "type": "module",
+  "main": "app.js",  // or "index.js" if you choose to use index.js
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"  // or "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^4.18.2"
   }
 }
- 
