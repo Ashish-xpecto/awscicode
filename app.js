@@ -4,7 +4,7 @@ const app = express();
 
 // Serve the HTML or send a response
 app.get('/', (req, res) => {
-  res.status(200).send("hello world from git");
+  res.status(200).send("hello world from git using pipline");
 });
 
 // Start the server
